@@ -1,11 +1,5 @@
-{
-    bugs:[
-        {
-            id: 1,
-            description: "Add a new bug",
-            resolved: false
-
-        }
-    ];
-    currentUser: {}
-}
+import {createStore} from 'redux';
+import reducer from './reducer';
+ 
+const store= createStore(reducer);
+export default store;
